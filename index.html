@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Letter Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+	<div class="container">
+	        <div class="row">
+	            <div class="col-md-6 twitter-style">
+	                <h1>Handwritten Letter Generator</h1>
+	                <form id="letter-form">
+	                    <div class="mb-3">
+	                        <label for="name" class="form-label">To</label>
+	                        <input type="text" class="form-control" id="name" required>
+	                    </div>
+	                    <div class="mb-3">
+	                        <label for="from" class="form-label">From</label>
+	                        <input type="text" class="form-control" id="from" required>
+	                    </div>
+	                    <div class="mb-3">
+	                        <label for="message" class="form-label">Message</label>
+	                        <textarea class="form-control" id="message" rows="5" required></textarea>
+	                    </div>
+	                    <div class="mb-3 form-check">
+	                        <input type="checkbox" class="form-check-input" id="include-date">
+	                        <label class="form-check-label" for="include-date">Include current date</label>
+	                    </div>
+	                    <button type="submit" class="btn btn-primary">Generate Letter</button>
+	                </form>
+	            </div>
+	            <div class="col-md-6 twitter-style" id="preview-container">
+	                <h2>Preview</h2>
+					<div id="letter-preview-box">
+						<div id="letter-preview"></div>
+					</div>
+					<br>
+					<button type="button" class="btn download-pdf-btn" onclick="downloadPDF()">Download PDF</button>
+	            </div>
+	        </div>
+	    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+	
+    <script src="letter.js"></script>
+</body>
+</html>

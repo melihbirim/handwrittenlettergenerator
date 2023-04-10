@@ -1,0 +1,58 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: #f5f8fa;
+	color: #14171a;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+
+.twitter-style {
+	background-color: #fff;
+	border: 1px solid #e1e8ed;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+#letter-preview-box {
+	border: 1px solid #e1e8ed;
+    width: 105mm;
+    height: 148mm;
+}
+
+#letter-preview {
+	padding: 10px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 0.75em;
+	white-space: pre-wrap;
+    width: 105mm;
+    height: 148mm;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/* Add this new style to fit the preview on smaller devices */
+@media (max-width: 767px) {
+    #letter-preview {
+        transform: scale(0.5);
+        transform-origin: top left;
+    }
+}
+
+#preview-container {
+	position: relative;
+}
+
+.download-pdf-btn {
+	background-color: #1da1f2;
+	color: #ffffff;
+	border: none;
+}
+
+.download-pdf-btn:hover {
+	background-color: #1a91da;
+	color: #ffffff;
+}
