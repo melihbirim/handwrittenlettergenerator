@@ -2,6 +2,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	background-color: #f5f8fa;
 	color: #14171a;
+
+	width: 100%;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body > div.container-fluid {
+	height: 100%;
 }
 
 h1, h2 {
@@ -9,11 +22,14 @@ h1, h2 {
 }
 
 .twitter-style {
+	display: flex;
+	flex-direction: column;
+
 	background-color: #fff;
 	border: 1px solid #e1e8ed;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	padding: 20px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 
 #letter-preview-box {
@@ -44,6 +60,7 @@ h1, h2 {
 
 #preview-container {
 	position: relative;
+	min-width: fit-content;
 }
 
 .download-pdf-btn {
